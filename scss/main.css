@@ -1,0 +1,268 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #282828 !important;
+}
+
+#backfoto {
+  background-image: url(../img/work-731198_1920.jpg);
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+}
+
+#containerprincipal {
+  height: 300px;
+}
+
+.container {
+  margin-bottom: 130px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  #backfoto {
+    height: 200px;
+  }
+  #containerprincipal {
+    height: 200px;
+  }
+  .container {
+    margin-bottom: 30px;
+  }
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+h4 {
+  font-family: "ZCOOL XiaoWei", serif !important;
+}
+
+h2 {
+  color: #fff !important;
+  text-align: center;
+}
+
+p {
+  color: #e0e0e0;
+  font-size: 1.2em;
+}
+
+h3 {
+  color: #fff !important;
+  text-align: left;
+}
+
+nav ul li a {
+  color: #fff;
+}
+
+nav {
+  margin-top: 0px auto;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.navbar-brand {
+  margin-top: -10px;
+}
+
+.container h2 {
+  margin-top: 10px;
+}
+
+.conteudo-principal {
+  padding: 5%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 80%;
+          flex: 1 1 80%;
+  min-height: 100vh;
+}
+
+.portfolio {
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  -ms-grid-rows: (1fr)[10];
+      grid-template-rows: repeat(10, 1fr);
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+}
+
+.portfolio-item {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: cover;
+  background-position: top left;
+  -webkit-transition: all ease-in-out 300ms;
+  transition: all ease-in-out 300ms;
+  position: relative;
+  z-index: 10;
+}
+
+/* layout principal*/
+.medio {
+  grid-row: span 4;
+  grid-column: span 4;
+}
+
+.retanverti {
+  grid-row: span 6;
+  grid-column: span 2;
+}
+
+.quadrado {
+  grid-row: span 6;
+  grid-column: span 2;
+}
+
+.retanhori {
+  grid-row: span 4;
+  grid-column: span 3;
+}
+
+.grande {
+  grid-row: span 6;
+  grid-column: span 3;
+}
+
+.conteudo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+}
+
+/* organização das fotos */
+.portfolio-item:hover {
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.85);
+}
+
+.efeito:hover::before {
+  opacity: 0.2;
+}
+
+.efeito {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.um {
+  background-image: url(../img/9d41a758059699.59ee4999bda0f.jpg);
+}
+
+.um:hover {
+  background-image: url(../img/pp.jpg);
+}
+
+.dois {
+  background-image: url(../img/pulapula.png);
+}
+
+.dois:hover {
+  background-image: url(../img/pulapula2.png);
+}
+
+.quatro {
+  background-image: url(../img/sorteio.png);
+}
+
+.quatro:hover {
+  background-image: url(../img/timemodelo2.png);
+}
+
+.cinco {
+  background-image: url(../img/outubrorosa.png);
+}
+
+.cinco:hover {
+  background-image: url(../img/poste.png);
+}
+
+.seis {
+  background-image: url(../img/dog2.png);
+}
+
+.seis:hover {
+  background-image: url(../img/warcatinsta.png);
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-social-icon {
+  color: #282828 !important;
+  margin: 5px;
+  background-color: #cfcfcf !important;
+}
+
+.btn-social-icon:hover {
+  background-color: #444444 !important;
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+  }
+  .medio {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+  .retanverti {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+  .quadrado {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+  .retanhori {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+  .grande {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+}
+/*# sourceMappingURL=main.css.map */
