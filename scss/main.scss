@@ -20,13 +20,20 @@ body {
 }
 
 .ajuste {
-  margin-top: -10px;
-  margin-bottom: 130px;
-  padding: 0;
+  margin-top: 130px;
 }
 @media screen and (max-width: 768px) {
   #backfoto {
     height: 200px;
+  }
+  .ajuste {
+    margin-top: 60px;
+  }
+  h3 {
+    font-size: 2em !important;
+  }
+  p {
+    font-size: 1em !important;
   }
 }
 h1,
@@ -63,4 +70,14 @@ nav {
 }
 .container h2 {
   margin-top: 10px;
+}
+
+.collapsed {
+  background-color: black !important;
+  opacity: 0.4;
+}
+
+.icon-bar {
+  background-color: #fff !important;
+  opacity: 1;
 }

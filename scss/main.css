@@ -14,15 +14,22 @@ body {
   top: 0;
 }
 
-.container {
-  margin-top: -10px;
-  margin-bottom: 130px;
-  padding: 0;
+.ajuste {
+  margin-top: 130px;
 }
 
 @media screen and (max-width: 768px) {
   #backfoto {
     height: 200px;
+  }
+  .ajuste {
+    margin-top: 60px;
+  }
+  h3 {
+    font-size: 2em !important;
+  }
+  p {
+    font-size: 1em !important;
   }
 }
 
@@ -68,10 +75,13 @@ nav {
   margin-top: 10px;
 }
 
-.conteudo-principal {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 80%;
-          flex: 1 1 80%;
-  min-height: 100vh;
+.collapsed {
+  background-color: black !important;
+  opacity: 0.4;
+}
+
+.icon-bar {
+  background-color: #fff !important;
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */
